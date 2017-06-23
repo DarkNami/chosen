@@ -303,6 +303,9 @@ class AbstractChosen
         this.results_search()
         break
 
+  input_checker: (evt) ->
+    this.results_search()
+
   clipboard_event_checker: (evt) ->
     return if @is_disabled
     setTimeout (=> this.results_search()), 50

@@ -81,6 +81,7 @@ class @Chosen extends AbstractChosen
     @search_field.observe "blur", (evt) => this.input_blur(evt)
     @search_field.observe "keyup", (evt) => this.keyup_checker(evt)
     @search_field.observe "keydown", (evt) => this.keydown_checker(evt)
+    @search_field.observe "input", (evt) => this.input_checker(evt)
     @search_field.observe "focus", (evt) => this.input_focus(evt)
     @search_field.observe "cut", (evt) => this.clipboard_event_checker(evt)
     @search_field.observe "paste", (evt) => this.clipboard_event_checker(evt)
